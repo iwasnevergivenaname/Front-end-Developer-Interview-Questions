@@ -3,11 +3,13 @@
 Question: What is the value of `foo`?
 ```javascript
 var foo = 10 + '20';
+// returns '1020'
 ```
 
 Question: What will be the output of the code below?
 ```javascript
 console.log(0.1 + 0.2 == 0.3);
+// returns false
 ```
 
 Question: How would you make this work?
@@ -19,6 +21,7 @@ add(2)(5); // 7
 Question: What value is returned from the following statement?
 ```javascript
 "i'm a lasagna hog".split("").reverse().join("");
+// returns "goh angasal a m'i"
 ```
 
 Question: What is the value of `window.foo`?
@@ -41,6 +44,7 @@ Question: What is the value of `foo.length`?
 var foo = [];
 foo.push(1);
 foo.push(2);
+// returns [ 1, 2 ]
 ```
 
 Question: What is the value of `foo.x`?
@@ -48,6 +52,7 @@ Question: What is the value of `foo.x`?
 var foo = {n: 1};
 var bar = foo;
 foo.x = foo = {n: 2};
+// returns undefined
 ```
 
 Question: What does the following code print?
