@@ -128,9 +128,9 @@ function foo2()
   };
 }
 
-// because you have the curly bracket starting on the line after your return statement the function stops executing before 
-// reaching the statement that is supposed to be inside the return
+// because you have the curly bracket starting on the line after your return statement the function  
+// stops executing before reaching the statement that is supposed to be inside the return
 // the foo2() function will just return undefined 
-// the foo1() function returns "Hello" because it's return statement is correctly structured and the program doesn't stop 
-// before "bar" is reached
+// the foo1() function returns "Hello" because it's return statement is correctly structured and  
+// the program doesn't stop before "bar" is reached
 ```
