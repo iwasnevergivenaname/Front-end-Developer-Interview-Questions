@@ -33,7 +33,14 @@ Do you know any exceptions?
     our CSS loads first thing to assure the user isn't exposed to anything unsightly. we also put the script tags at the 
     bottom of the body to make sure all of our DOM elements load before anything starts to execute.
 * What is progressive rendering?
+    - this renders the webpage from the server and streams to the client at once, instead of waiting for the whole
+    page to be rendered
 * Why you would use a `srcset` attribute in an image tag? Explain the process the browser uses when evaluating the 
 content of this attribute.
 * Have you used different HTML templating languages before?
 * What is the difference between `canvas` and `svg`?
+    - both are associated with 2d graphics but 
+    - svg is a language for describing graphics in xml which means every element is DOM accessible, and it gives a 
+    better output with a number of objects or a larger surface. it produces vector based images composed of shapes.
+    - canvas can draw 2d graphics in javascript, it does not store the drawn graphics in the browser. this performs 
+    better with a larger object or smaller space, and is composed of pixels.
