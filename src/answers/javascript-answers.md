@@ -2,8 +2,12 @@
 
 
 * Explain event delegation.
+    - this is used to create multiple listening events on a single event listener. this action is acheived through
+    event progagation. 
 * Explain how `this` works in JavaScript.
+    - `this` creates and binds an object to the current execution context.
 * Can you give an example of one of the ways that working with `this` has changed in ES6?
+    - `this` became a bit smarter and doesn't require binding anymore in as many cases anymore
 * Explain how prototypal inheritance works.
 * What's the difference between a variable that is: `null`, `undefined` or undeclared?
     - `null` means there, is a variable 
