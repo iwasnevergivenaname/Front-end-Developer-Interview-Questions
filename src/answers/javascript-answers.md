@@ -35,6 +35,10 @@
 * What's the difference between an "attribute" and a "property"?
 * What are the pros and cons of extending built-in JavaScript objects?
 * What is the difference between `==` and `===`?
+    - `==` tests for equality abstractly, it quietly performs automatic type conversion if needed to asses equality 
+    of value. `'1' == 1 // return true` because when both converted to strings, they do match perfectly.
+    - `===` is a much more strict type of comparision and does not alter the types, because it is assessing equality by 
+    **and** data type.
 * Explain the same-origin policy with regards to JavaScript.
 * Why is it called a Ternary operator, what does the word "Ternary" indicate?
 * What is strict mode? What are some of the advantages/disadvantages of using it?
@@ -46,7 +50,11 @@
   * How can you achieve immutability in your own code?
 * Explain the difference between synchronous and asynchronous functions.
 * What is event loop?
-  * What is the difference between call stack and task queue?
+* What is the difference between call stack and task queue?
+    - a call stack has a Last In, First Out flow, this becomes useful when you want to utilize functions that "remember"
+    previous operations, like the undo option.
+    - a queue has a First In, First Out flow, this functionality is useful for keeping a certain order of information, 
+    like pages sent to the printer.
 * What are the differences between variables created using `let`, `var` or `const`?
 * What are the differences between ES6 class and ES5 function constructors?
 * Can you offer a use case for the new arrow `=>` function syntax? How does this new syntax differ from other functions?
