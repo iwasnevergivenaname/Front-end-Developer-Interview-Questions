@@ -45,6 +45,9 @@ var foo = "Hello";
   alert(foo + bar);
 })();
 alert(foo + bar);
+
+// the anonymous function will show an alert that says "Hello World"
+// the second alert will not run because it cannot resolve "bar" to be the value inside the anonymous function
 ```
 
 Question: What is the value of `foo.length`?

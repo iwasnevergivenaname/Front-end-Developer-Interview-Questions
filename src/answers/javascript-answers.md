@@ -64,9 +64,9 @@
     - a queue has a First In, First Out flow, this functionality is useful for keeping a certain order of information, 
     like pages sent to the printer.
 * What are the differences between variables created using `let`, `var` or `const`?
-    - `var` used to be the only way to create a variable, until ES6. it shares mutability with `let` but it has a wider
+    - `var` used to be the only way to create a variable, until ES6. it shares mutability with `let` but it has a function
     available scope.
-    - `let` is a declaration introduced in ES6, it allows for mutability of variables.
+    - `let` is a declaration introduced in ES6, it allows for mutability of variables. this is block scoped.
     - `const` is also a new declaration from ES6, and this creates immutability of variables.
     
 * What are the differences between ES6 class and ES5 function constructors?
@@ -75,6 +75,7 @@
 * What is the definition of a higher-order function?
 * Can you give an example for destructuring an object or an array?
 * Can you give an example of generating a string with ES6 Template Literals?
+    - string interpolation - backticks => `i want to insert ${this}`  <= backticks
 * Can you give an example of a curry function and why this syntax offers an advantage?
 * What are the benefits of using `spread syntax` and how is it different from `rest syntax`?
 * How can you share code between files?
