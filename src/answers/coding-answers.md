@@ -3,12 +3,14 @@
 Question: What is the value of `foo`?
 ```javascript
 var foo = 10 + '20';
+
 // returns '1020'
 ```
 
 Question: What will be the output of the code below?
 ```javascript
 console.log(0.1 + 0.2 == 0.3);
+
 // returns false
 ```
 
@@ -21,6 +23,7 @@ add(2)(5); // 7
 Question: What value is returned from the following statement?
 ```javascript
 "i'm a lasagna hog".split("").reverse().join("");
+
 // returns "goh angasal a m'i"
 ```
 
@@ -44,6 +47,7 @@ Question: What is the value of `foo.length`?
 var foo = [];
 foo.push(1);
 foo.push(2);
+
 // returns [ 1, 2 ]
 ```
 
@@ -52,6 +56,7 @@ Question: What is the value of `foo.x`?
 var foo = {n: 1};
 var bar = foo;
 foo.x = foo = {n: 2};
+
 // returns undefined
 ```
 
@@ -65,6 +70,8 @@ Promise.resolve().then(function() {
   console.log('three');
 })
 console.log('four');
+
+// prints one, four, three, two
 ```
 
 Question: What is the difference between these four promises?
@@ -90,6 +97,18 @@ Question: What will the code below output to the console and why?
 
 console.log("a defined? " + (typeof a !== 'undefined'));
 console.log("b defined? " + (typeof b !== 'undefined'));
+
+// prints a defined? false b defined? true 
+// following the logic of the code
+// a variable b is declared and assigned the value of 3
+// a variable a is declared and assigned the the value of our first placeholder, b
+// our bottom console.logs are printing out the output to a conditional 
+// does the type of this variable NOT MATCH undefined
+// meaning it has an actual value assigned to it and isn't just declared
+// b does have a value therefor does NOT match undefined and will print "true"
+// a is pointing to b, which is a placeholder for it's own value. meaning as far as the machine can tell, a is undefined 
+
+
 ```
 
 Question: Consider the two functions below. Will they both return the same thing? Why or why not?
@@ -108,4 +127,10 @@ function foo2()
       bar: "hello"
   };
 }
+
+// because you have the curly bracket starting on the line after your return statement the function stops executing before 
+// reaching the statement that is supposed to be inside the return
+// the foo2() function will just return undefined 
+// the foo1() function returns "Hello" because it's return statement is correctly structured and the program doesn't stop 
+// before "bar" is reached
 ```
