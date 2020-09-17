@@ -2,9 +2,16 @@
 
 
 * What does a `doctype` do?
+    - short for Document Type Declaration, it informs the web browser about the type and version of HTML being used, and
+    therefore can display it correctly
 * How do you serve a page with content in multiple languages?
 * What kind of things must you be wary of when designing or developing for multilingual sites?
 * What are `data-` attributes good for?
+    - they are used to store custom private data to the page or application while giving us the ability to 
+    embed custom data attributes onto HTML elements
+        - the attribute name shouldn't possess upper case letters, and must start with the `data-` prefix
+        - the attribute value can be any string
+        - `<h2 data-animal-type="sloth">sloth</h2>`
 * Consider HTML5 as an open web platform. What are the building blocks of HTML5?
 * Describe the difference between a `cookie`, `sessionStorage` and `localStorage`.
      - cookies store data that needs to pass requests back to the server. they have a short expiration and must be used to
@@ -17,6 +24,9 @@
         cache, or through javascript. this has the largest amount of storage available. can only be read on the client side.
 
 * Describe the difference between `<script>`, `<script async>` and `<script defer>`.
+    - `<script>` defines the client side script and runs after the DOM is loaded
+    - `<script async>` will execute at its opportunity, after it downloads it runs asynchronously while the page is parsing
+    - `<script defer>` will only execute in the order of occupancy on the actual page, and after the page has been parsed
 * Why is it generally a good idea to position CSS `<link>`s between `<head></head>` and JS `<script>`s just before `</body>`? 
 Do you know any exceptions?
     - HTML pages render from top to bottom, so because we have spent so much making things look nice, we want to make sure 
