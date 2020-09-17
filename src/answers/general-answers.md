@@ -30,3 +30,11 @@
 * What skills are needed to be a good front-end developer?
 * What role do you see yourself?
 * Explain the difference between cookies, session storage, and local storage?
+    - cookies store data that needs to pass requests back to the server. they have a short expiration and must be used to
+    send smaller piece of data (<4KB) and can be read server side. these can be made secure so they cannot be accessed
+    on the client side. 
+    - session storage is stored only for that session, meaning until that browser or tab is closed. data from the session
+    is never transferred to the server, and the storage limit is larger than a cookie (at least 5MB). can only be read on 
+    the client side.
+    - local storage stores data for an unlimited amount of time and can only be cleared intentionally through clearing the 
+    cache, or through javascript. this has the largest amount of storage available. can only be read on the client side.
