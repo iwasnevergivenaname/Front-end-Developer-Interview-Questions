@@ -3,13 +3,13 @@
 
 * Explain event delegation.
 * Explain how `this` works in JavaScript.
-  * Can you give an example of one of the ways that working with `this` has changed in ES6?
+* Can you give an example of one of the ways that working with `this` has changed in ES6?
 * Explain how prototypal inheritance works.
 * What's the difference between a variable that is: `null`, `undefined` or undeclared?
     - `null` means there, is a variable 
     - `undefined` means there is a variable declared but no value that can be found for it
     - undeclared is a variable that has not been declared before it an intialization was attempted 
-  * How would you go about checking for any of these states?
+* How would you go about checking for any of these states?
 * What is a closure, and how/why would you use one?
 * What language constructions do you use for iterating over object properties and array items?
 * Can you describe the main difference between the `Array.forEach()` loop and `Array.map()` methods and why you would pick one versus the other?
@@ -56,6 +56,11 @@
     - a queue has a First In, First Out flow, this functionality is useful for keeping a certain order of information, 
     like pages sent to the printer.
 * What are the differences between variables created using `let`, `var` or `const`?
+    - `var` used to be the only way to create a variable, until ES6. it shares mutability with `let` but it has a wider
+    available scope.
+    - `let` is a declaration introduced in ES6, it allows for mutability of variables.
+    - `const` is also a new declaration from ES6, and this creates immutability of variables.
+    
 * What are the differences between ES6 class and ES5 function constructors?
 * Can you offer a use case for the new arrow `=>` function syntax? How does this new syntax differ from other functions?
 * What advantage is there for using the arrow syntax for a method in a constructor?
@@ -65,6 +70,12 @@
 * Can you give an example of a curry function and why this syntax offers an advantage?
 * What are the benefits of using `spread syntax` and how is it different from `rest syntax`?
 * How can you share code between files?
+    - you can export code that you have written by writing `export default [functionName]` at the bottom of the file 
+    with the code in it.
+    - in the files you want to access the code you can import it at the top of your file by writing `import 
+    functionName from '../extraCode.js'`, you can then use it as if it were declared and defined in that very file.
 * Why you might want to create static class members?
 * What is the difference between `while` and `do-while` loops in JavaScript?
+    - `do-while` will always complete it's loop one time before checking on it's stopping condition (the `while` statement).
+    - `while` loop will only run if it's stopping condition has not been met yet.
 * What is a promise? Where and how would you use promise?
