@@ -3,7 +3,7 @@
 
 * Explain event delegation.
     - this is used to create multiple listening events on a single event listener. this action is acheived through
-    event progagation. 
+    event propagation. 
 * Explain how `this` works in JavaScript.
     - `this` creates and binds an object to the current execution context.
 * Can you give an example of one of the ways that working with `this` has changed in ES6?
@@ -12,13 +12,15 @@
 * What's the difference between a variable that is: `null`, `undefined` or undeclared?
     - `null` means there, is a variable 
     - `undefined` means there is a variable declared but no value that can be found for it
-    - undeclared is a variable that has not been declared before it an intialization was attempted 
+    - undeclared is a variable that has not been declared before it an initialization was attempted 
 * How would you go about checking for any of these states?
 * What is a closure, and how/why would you use one?
 * What language constructions do you use for iterating over object properties and array items?
 * Can you describe the main difference between the `Array.forEach()` loop and `Array.map()` methods and why you would pick one versus the other?
 * What's a typical use case for anonymous functions?
 * What's the difference between host objects and native objects?
+    - host objects are supplied by their environment, likes node.js supplies NodeList, and they are not always the same
+    - native objects are built in javascript objects and do not require any package installation to use
 * Explain the difference between: `function Person(){}`, `var person = Person()`, and `var person = new Person()`?
     - `function Person(){}` is declaring an empty function named Person
     - `var person = Person()` is declaring the variable person to have the value of the function Person
@@ -37,6 +39,8 @@
 * Describe event bubbling.
 * Describe event capturing.
 * What's the difference between an "attribute" and a "property"?
+    - attributes refer to additional information of an object
+    - properties describe the characteristics of an object
 * What are the pros and cons of extending built-in JavaScript objects?
 * What is the difference between `==` and `===`?
     - `==` tests for equality abstractly, it quietly performs automatic type conversion if needed to asses equality 

@@ -2,6 +2,7 @@
 
 
 * What did you learn yesterday/this week?
+    - i learned the formual for the fibonocci sequence, `f(n-1) + f(n-2)`
 * What excites or interests you about coding?
 * What is a recent technical challenge you experienced and how did you solve it?
 * When building a new web site or maintaining one, can you explain some techniques you have used to increase performance?

@@ -18,6 +18,11 @@ Question: How would you make this work?
 ```javascript
 add(2, 5); // 7
 add(2)(5); // 7
+
+// function add(n1, n2) {
+//     return n1 + n2
+// }
+// add(2, 5)
 ```
 
 Question: What value is returned from the following statement?
